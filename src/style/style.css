@@ -1,0 +1,157 @@
+html{
+  font-size: 10px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+    color: #2d4086;
+    margin: 1rem;
+  }
+  
+  table {
+    /* border: 1px solid #ccc; */
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+table thead{
+  background-color: #eaecf3;
+}
+  
+  /* table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  } */
+  
+  table tr {
+    /* background-color: #f8f8f8; */
+    border-bottom: .1rem solid #ddd;
+    padding: .35rem;
+  }
+  
+  table th,
+  table td {
+    padding: .625rem;
+    text-align: left;
+  }
+  
+  table th {
+    font-size: 1.25rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 60rem) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3rem;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: .1rem;
+      margin: -.1rem;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: .1rem;
+    }
+    
+    table tr {
+      border-bottom: .3rem solid #ddd;
+      display: block;
+      margin-bottom: .625rem;
+    }
+    
+    table td {
+      border-bottom: .1rem solid #ddd;
+      display: block;
+      font-size: .8rem;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .td1-date,
+  .td1-campaign1{
+    font-size: 1.35rem;
+  }
+
+  .img-th2-1,
+  .img-th3-1,
+  .img-action1,
+  .img-action2,
+  .img-action3{
+    float: left;
+  }
+
+  .img-th2-1{
+    margin-right: .6rem;
+    height: 5rem;
+  }
+
+  .td1-datelast,
+  .td1-campaign2{
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: .8;
+  }
+
+  .td1-campaign1,
+  .td1-campaign2{
+    display: block;
+  }
+
+  .td1-campaign2{
+    margin-top: 2rem;
+  }
+
+  .img-th3-1,
+  .img-action1,
+  .img-action2,
+  .img-action3{
+    margin-right: .4rem;
+    height: 3rem;
+  }
+
+  .view-td1,
+  .action-text1,
+  .action-text2,
+  .action-text3{
+    font-size: 1.2rem;
+    opacity: .8;
+    line-height: 3rem;
+  }
+
+  .amount1{
+    display: inline-block;
+    margin: 1rem 1rem 1rem 0rem;
+  }
+  .amount2,
+  .amount3{
+    display: inline-block;
+    margin: 1rem;
+  }
+
